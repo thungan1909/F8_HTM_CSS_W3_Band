@@ -28,36 +28,63 @@ html {
     background-color: #000;
 }
 
-#nav {
-
+#nav, .subnav {
+    list-style-type: none; /*Bỏ dấu chấm hiển thị trước thẻ li*/
 }
-
-#nav li {
+/* Chỉ cho li cấp 1 có thuộc tính inline-block thôi */
+#nav > li {
     display: inline-block; /*inline: hiển thị 1 hàng, block: tính chất khối */
+} 
+#nav li {
 
-
+    position: relative;
 }
-
-#nav li a {
+/* Tác động trực tiếp lên thẻ a là con của li và li là con của nav (thẻ subnav không bị tác động) */
+#nav > li > a {
     color: #fff;
+    text-transform: uppercase;
+}
+#nav li a {
+    
     text-decoration: none; /*Bỏ gạch chân thẻ a */
     line-height: 46px; /*Cao bằng chiều cao của header*/
     padding: 0 24px;
-    display: inline-block;
+    display: block;
+}
+
+#nav li:hover .subnav {
+    display: block;
 }
 /* Ở đây, nếu như ta hover ở thẻ a (#nav li a:hover)
 thì vẫn có thể làm được. Tuy nhiên, nếu ta click vào thẻ More rồi bấm chọn các thuộc tính bên dưới
 thì thẻ a (More) sẽ mất active (hiện nền hover) mà chỉ active các thẻ con
 */
-#nav li:hover a {
+#nav .subnav li:hover a,
+#nav > li:hover > a {
     color: #000;
     background-color: #ccc;
 }
-
+/* #nav .subnav li:hover a {
+     color: #000;
+    background-color: #ccc;
+} 
+ Vì cả 2 sẽ cùng thuộc tính nên thay vì lặp lại, ta sẽ viết cách nhau dấu phẩy
+*/
 
 #nav .subnav {
     display: none;
+    min-width: 160px;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
+#nav .subnav a {
+    color: #000;
+    padding: 0 12px;
+    line-height: 36px;
+}
+
 
 #slider {
 
