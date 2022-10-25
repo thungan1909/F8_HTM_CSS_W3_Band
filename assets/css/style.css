@@ -30,6 +30,9 @@ html {
     right: 0;
     height: 46px;
     background-color: #000;
+    z-index: 1; 
+    /* Do thêm position: fixed nên header nó tách rời lớp bình thường (có thể nổi lên hoặc chìm xuống)
+    Trong trường hợp nó bị chìm xuống, ta thêm z-index = 1 giá trị nào đó (tùy theo bài) để nó nổi lên */
     
 }
 /* Begin: Navbar */
@@ -130,7 +133,38 @@ thì thẻ a (More) sẽ mất active (hiện nền hover) mà chỉ active các
     => một phần slider bị che khuất bởi header
     => lùi margin (khoảng cách lề) của slider xuống 46px (chiều cao của header) */
     margin-top: 46px;
+    padding-top: 50%;     /* Để kích thước slider luôn có chiều cao = 1/2 chiều ngang*/
+    /* Lý do là khi để 50% ở padding-top thì có nghĩa là bằng 50% chiều ngang của chính nó */
+    background: url('/assets/img/slider/slider1.jpg') top center /cover no-repeat;
+    /* /cover (thể hiện background size) */
+    position: relative;
 
+}
+ 
+#slider .text-content {
+    position: absolute;
+    bottom: 47px;
+    color: #fff;
+    /* Cách 1: left: 50%; 
+    transform: translateX(-50%);  */ 
+    /* Vì thêm left nó sẽ căn trái mọi thứ 50%  
+    => Ta cần nội dung căn giữa theo dòng text ở dưới
+    => Lùi về bên trái 50% (đối với dòng chữ dài)*/ 
+    width: 100%;
+    /* Cách 3:
+    right:  0;
+    left: 0;*/
+    text-align: center;
+}
+
+#slider .text-heading {
+    font-weight: 500;
+    font-size: 24px;
+}
+
+#slider .text-description {
+    font-size: 15px;
+    margin-top: 25px;
 }
 
 #content {
