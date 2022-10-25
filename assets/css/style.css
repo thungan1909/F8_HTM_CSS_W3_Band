@@ -1,0 +1,72 @@
+/*Reset CSS*/
+* {
+    padding: 0 ;   /*Gõ nhanh bằng cách p: enter (hoặc p tab (có thể không work))*/
+    margin: 0;
+    box-sizing: border-box;
+}
+/* 
+1. Từ ngoài vào trong
+2. Từ trên xuống dưới
+3. Tổng quan đến chi tiết
+*/
+/*
+1. Vị trí
+2. Kích thước (Width, height)
+3. Màu sắc
+4. Hình dáng (Kiểu chữ, 
+*/
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+#main {
+
+}
+
+#header {
+    height: 46px;
+    background-color: #000;
+}
+
+#nav {
+
+}
+
+#nav li {
+    display: inline-block; /*inline: hiển thị 1 hàng, block: tính chất khối */
+
+
+}
+
+#nav li a {
+    color: #fff;
+    text-decoration: none; /*Bỏ gạch chân thẻ a */
+    line-height: 46px; /*Cao bằng chiều cao của header*/
+    padding: 0 24px;
+    display: inline-block;
+}
+/* Ở đây, nếu như ta hover ở thẻ a (#nav li a:hover)
+thì vẫn có thể làm được. Tuy nhiên, nếu ta click vào thẻ More rồi bấm chọn các thuộc tính bên dưới
+thì thẻ a (More) sẽ mất active (hiện nền hover) mà chỉ active các thẻ con
+*/
+#nav li:hover a {
+    color: #000;
+    background-color: #ccc;
+}
+
+
+#nav .subnav {
+    display: none;
+}
+
+#slider {
+
+}
+
+#content {
+
+}
+
+#footer {
+
+}
