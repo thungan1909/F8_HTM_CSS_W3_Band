@@ -24,8 +24,13 @@ html {
 }
 
 #header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     height: 46px;
     background-color: #000;
+    
 }
 /* Begin: Navbar */
 #nav {
@@ -120,6 +125,11 @@ thì thẻ a (More) sẽ mất active (hiện nền hover) mà chỉ active các
 }
 
 #slider {
+        /* Do header sử dụng postion: fixed 
+    nên nó nổi nằm chồng lên trên và nhường vị trí lại cho slider 
+    => một phần slider bị che khuất bởi header
+    => lùi margin (khoảng cách lề) của slider xuống 46px (chiều cao của header) */
+    margin-top: 46px;
 
 }
 
