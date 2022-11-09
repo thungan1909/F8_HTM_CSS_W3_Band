@@ -318,6 +318,7 @@ thì thẻ a (More) sẽ mất active (hiện nền hover) mà chỉ active các
     padding: 15px 16px;
     background-color: #000;
     color: #fff;
+    border: none;
     text-decoration: none;
     display: inline-block;
 }
@@ -325,6 +326,7 @@ thì thẻ a (More) sẽ mất active (hiện nền hover) mà chỉ active các
 #content .place-buy-tickets:hover{
     background-color: #ccc;
     color: #000;
+    border: none;
 }
 /* End :Content*/
 
