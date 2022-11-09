@@ -23,6 +23,9 @@ html {
 .clear {
     clear: both;
 }
+.text-white {
+    color: #fff !important;
+}
 #main {
 
 }
@@ -131,6 +134,8 @@ thì thẻ a (More) sẽ mất active (hiện nền hover) mà chỉ active các
 
 }
 
+/* Begin :Slider */
+
 #slider {
         /* Do header sử dụng postion: fixed 
     nên nó nổi nằm chồng lên trên và nhường vị trí lại cho slider 
@@ -170,11 +175,14 @@ thì thẻ a (More) sẽ mất active (hiện nền hover) mà chỉ active các
     font-size: 15px;
     margin-top: 25px;
 }
+/*End :Slider */
 
+
+/* Begin: Content*/
 #content {
-
 }
 
+/* Begin :Content - About Section */
 #content .section-heading {
     font-size: 30px;
     font-weight: 500;
@@ -214,7 +222,7 @@ thì thẻ a (More) sẽ mất active (hiện nền hover) mà chỉ active các
     width: calc(100%/3); /*để kéo ra cho ngang bằng chữ*/
     text-align: center;
 }
-#content .meber-img {
+#content .member-img {
     width: 154px;
     margin-top: 15px;
     border-radius: 4px;
@@ -223,6 +231,51 @@ thì thẻ a (More) sẽ mất active (hiện nền hover) mà chỉ active các
     font-size: 15px;
    
 }
+
+/* End :Content - About Section */
+
+/*Begin:Content - Tour section */
+
+#content .tour-section{
+    background-color: #000;
+}
+
+#content .tickets-list{
+    background-color: #fff;
+    margin-top: 40px;
+    list-style: none;
+
+}
+#content .tickets-list li{
+    color:  #757575;
+    font-size: 15px;
+    padding: 11px 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+#content .tickets-list .sold-out{
+    background-color: #f44336;
+    color: #fff;
+    margin-left: 16px;
+    padding: 3px 8px;
+}
+
+#content .tickets-list .quantity{
+    float: right;
+    width: 24px;
+    height: 24px;
+    margin-top: -3px;
+    line-height: 24px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+}
+
+
+/* End :Content*/
+
+/* Footer section */
 #footer {
 
 }
