@@ -332,3 +332,97 @@ thì thẻ a (More) sẽ mất active (hiện nền hover) mà chỉ active các
 #footer {
 
 }
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.4);
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.modal.open {
+    display: flex;
+}
+
+.modal-container {
+    background: #fff;
+    width: 900px;
+    max-width: calc(100% - 32px);
+    min-height: 200px;
+    position: relative;
+}
+
+/* Modal header */
+header.modal-header{
+    line-height: 130px;
+    background-color: #009688;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.modal-header-icon{
+    margin-right: 16px;
+}
+.modal-close{
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #fff;
+    padding: 12px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+.modal-close:hover{
+    opacity: 1;
+}
+
+/* Modal body */
+
+.modal-body{
+    padding: 16px;
+    font-size: 16px;
+}
+label.modal-label{
+    display: block;
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+.modal-input{
+    padding: 8px;
+    margin-bottom: 24px;
+    border: 1px solid #ccc;
+    width: 100%;
+    font-size: 15px;
+}
+
+button#modal-buy-ticket{
+    background-color: #009688;
+    color: #fff;
+    width: 100%;
+    font-size: 15px;
+    margin:  10px 0px;
+    padding: 16px;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+button#modal-buy-ticket:hover{
+    opacity: 0.9;
+}
+
+.modal-footer{
+    padding: 16px;
+    text-align: right;
+    font-size: 16px;
+}
+.modal-help a{
+    color: #2196f3;   
+}
