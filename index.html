@@ -89,7 +89,7 @@
                                 <h3 class="place-heading">New York</h3>
                                 <p class="place-time">Fri 27 Nov 2016</p>
                                 <p class="place-info">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <a href="#" class="place-buy-tickets">Buy Tickets</a>
+                                <button  class="place-buy-tickets js-buy-ticket">Buy Tickets</button>
                             </div>
 
                         </div>
@@ -99,7 +99,7 @@
                                 <h3 class="place-heading">Paris                            </h3>
                                 <p class="place-time">Sat 28 Nov 2016</p>
                                 <p class="place-info">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <a href="#" class="place-buy-tickets">Buy Tickets</a>
+                                <button class="place-buy-tickets js-buy-ticket ">Buy Tickets</button>
                             </div>
                         </div>
                         <div class="place-item"> 
@@ -108,7 +108,7 @@
                                 <h3 class="place-heading">San Fransicos</h3>
                                 <p class="place-time">Sun 29 Nov 2016</p>
                                 <p class="place-info">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <a href="#" class="place-buy-tickets">Buy Tickets</a>
+                                <button class="place-buy-tickets js-buy-ticket">Buy Tickets</button>
                             </div>
                         </div>
                         <div class="clear"></div>
@@ -124,9 +124,9 @@
         <div id="footer" class="">     
         </div>
     </div>
-    <div class="modal">
-        <div class="modal-container">
-            <div class="modal-close">
+    <div class="modal js-modal">
+        <div class="modal-container js-modal-container">
+            <div class="modal-close js-modal-close">
                 <i class="ti-close"></i>
             </div>
             <header class="modal-header">
@@ -157,5 +157,33 @@
             </footer>
         </div>
     </div>
+    <script>
+        const buyBtns = document.querySelectorAll('.js-buy-ticket')
+        const modal = document.querySelector('.js-modal')
+        const modal_container = document.querySelector('.js-modal-container')
+        const close_modal = document.querySelector('.js-modal-close')
+        
+        function showBuyTickets ()  {
+            modal.classList.add('open')
+        }
+        function closeBuyTickets ()  {
+            modal.classList.remove('open')
+        }
+    // Nhấn vào nút Buy Ticket thì show Modal buy ticket
+        for (const buyBtn of buyBtns) {
+            buyBtn.addEventListener('click',showBuyTickets )
+        }
+
+    //    Bấm nút close thì tắt Modal buy ticket
+        close_modal.addEventListener('click',closeBuyTickets)
+    //    Bấm vào bất kì chỗ nào khác thì tắt Modal buy ticket
+        modal.addEventListener('click',closeBuyTickets)
+    //    Bấm vào trong nội dung Modal thì ngăn ngừa những hành động khác (ngăn cản close tắt Modal buy ticket)
+        modal_container.addEventListener('click',function (event) {
+            event.stopPropagation()
+        })
+        
+    </script>
 </body>
+
 </html>
