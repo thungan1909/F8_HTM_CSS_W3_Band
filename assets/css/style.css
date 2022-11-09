@@ -236,6 +236,8 @@ thì thẻ a (More) sẽ mất active (hiện nền hover) mà chỉ active các
 
 /*Begin:Content - Tour section */
 
+
+
 #content .tour-section{
     background-color: #000;
 }
@@ -271,8 +273,59 @@ thì thẻ a (More) sẽ mất active (hiện nền hover) mà chỉ active các
     border-radius: 50%;
     text-align: center;
 }
+#content .places-list{
+    margin: 32px -8px 0px;
+    
+    padding-bottom: 48px ;
+  
+}
 
+#content .place-item{
+    float: left;
+    width: 33.33333333%;
+    padding: 0 8px;
+}
 
+#content .place-content{
+    background-color: #fff;
+    padding: 16px;
+    font-size: 15px;
+}
+#content .place-img{
+    width: 100%;
+    display: block;
+    
+}
+#content .place-img:hover{
+    opacity: 0.6;
+}
+
+#content .place-heading{
+    font-size: 15px;
+}
+
+#content .place-time{
+    color: #757575;
+    margin: 15px 0px 15px 0px;
+}
+#content .place-time{
+    margin-top: 15px;
+    line-height: 1.4;
+}
+
+#content .place-buy-tickets{
+    margin-top: 15px;
+    padding: 15px 16px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+}
+
+#content .place-buy-tickets:hover{
+    background-color: #ccc;
+    color: #000;
+}
 /* End :Content*/
 
 /* Footer section */
