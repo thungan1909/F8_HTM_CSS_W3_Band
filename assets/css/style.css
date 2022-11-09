@@ -16,6 +16,8 @@
 4. Hình dáng (Kiểu chữ, 
 */
 
+/* Common */
+
 html {
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -26,9 +28,36 @@ html {
 .text-white {
     color: #fff !important;
 }
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.col {
+    float: left; /*để 3 member-item nằm chung 1 hàng*/ 
+    padding-left: 8px;
+    padding-right: 8px;
+}
+/*  giao diện 2 cột */
+.col_2 {
+    width: 50%;
+}
+/*  giao diện 3 cột */
+.col_3 {
+    width: calc(100%/3); /*để kéo ra cho ngang bằng chữ*/
+}
+
+.text_center {
+    text-align: center;
+}
+
+/* Main */
 #main {
 
 }
+
+
 
 #header {
     position: fixed;
@@ -217,11 +246,6 @@ thì thẻ a (More) sẽ mất active (hiện nền hover) mà chỉ active các
 #content .members-list {
     margin-top: 48px;
 }
-#content .member-item {
-    float: left; /*để 3 member-item nằm chung 1 hàng*/ 
-    width: calc(100%/3); /*để kéo ra cho ngang bằng chữ*/
-    text-align: center;
-}
 #content .member-img {
     width: 154px;
     margin-top: 15px;
@@ -274,16 +298,12 @@ thì thẻ a (More) sẽ mất active (hiện nền hover) mà chỉ active các
     text-align: center;
 }
 #content .places-list{
-    margin: 32px -8px 0px;
-    
-    padding-bottom: 48px ;
-  
+
+    margin-top: 32px;
+    margin-bottom: 48px;
 }
 
 #content .place-item{
-    float: left;
-    width: 33.33333333%;
-    padding: 0 8px;
 }
 
 #content .place-content{
