@@ -28,10 +28,28 @@ html {
 .text-white {
     color: #fff !important;
 }
+/* margin-top = 8px */
+.mt-8 {
+    margin-top: 8px !important;
+}
+
+.mt-16 {
+    margin-top: 16px !important;
+}
+
+.text_center {
+    text-align: center !important
+}
 
 .row {
     margin-left: -8px;
     margin-right: -8px;
+}
+/* De khong can su dung class clear nua => them 1 element gia */
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
 }
 
 .col {
@@ -39,8 +57,11 @@ html {
     padding-left: 8px;
     padding-right: 8px;
 }
+.col_full {
+    width: 100%;
+}
 /*  giao diện 2 cột */
-.col_2 {
+.col_half {
     width: 50%;
 }
 /*  giao diện 3 cột */
@@ -48,9 +69,6 @@ html {
     width: calc(100%/3); /*để kéo ra cho ngang bằng chữ*/
 }
 
-.text_center {
-    text-align: center;
-}
 
 /* Main */
 #main {
@@ -348,6 +366,50 @@ thì thẻ a (More) sẽ mất active (hiện nền hover) mà chỉ active các
     color: #000;
     border: none;
 }
+
+/* Content - Contact Section */
+
+#content .contact-content {
+    margin-top: 48px;
+    font-size: 16px;
+    
+}
+#content .contact-form {
+    font-size: 15px;
+}
+#content .contact-info {
+    font-size: 18px;
+    line-height: 1.4;
+}
+#contet .contact-info i[class*="ti-"] {
+    width: 30px;
+    display: inline-block;
+}
+
+#content .contact-input {
+    padding: 15px;
+    border: 1px solid #ccc;
+    width: 100%;
+    outline: none;
+   
+}
+#content .form-submit-btn {
+    padding: 15px 16px;
+    float: right;
+    background-color: #000;
+    color: #fff;
+    border-radius: 2px;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#content .form-submit-btn:hover {
+    cursor: pointer;
+    background-color: #ccc;
+    color: #000;
+}
 /* End :Content*/
 
 /* Footer section */
@@ -453,6 +515,7 @@ button#modal-buy-ticket:hover{
     color: #2196f3;   
 }
 
+
 @keyframes modalFadeIn{
     from {
         opacity: 0;
@@ -463,3 +526,4 @@ button#modal-buy-ticket:hover{
         transform: translateY(0px);
     }
 }
+
