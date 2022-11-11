@@ -261,10 +261,14 @@ thì thẻ a (More) sẽ mất active (hiện nền hover) mà chỉ active các
 }
 #content .content-section {
     width: 800px;
-    padding: 64px 0  132px;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
     text-align: justify;
+    padding-top: 64px;
+    padding-bottom: 132px;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 #content .section-heading,
 #content .section-sub-heading  {
