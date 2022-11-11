@@ -19,6 +19,8 @@
 /* Common */
 
 html {
+   
+    scroll-behavior: smooth;   /* hành động cuộn lướt trang */
     font-family: Arial, Helvetica, sans-serif;
 }
 
