@@ -173,6 +173,8 @@ thì thẻ a (More) sẽ mất active (hiện nền hover) mà chỉ active các
 /* End: Navbar */
 
 /* Begin: Search button */
+
+
 #header .mobile-menu-btn,
 #header .search-btn {
    
@@ -183,6 +185,9 @@ thì thẻ a (More) sẽ mất active (hiện nền hover) mà chỉ active các
 
 #header .mobile-menu-btn {
     display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 #header .mobile-menu-icon,
 #header .search-icon{
