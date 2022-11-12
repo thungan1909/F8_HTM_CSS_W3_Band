@@ -98,7 +98,7 @@ html {
     height: 46px;
     background-color: #000;
     z-index: 1; 
-    overflow: hidden;
+  
     /* Do thêm position: fixed nên header nó tách rời lớp bình thường (có thể nổi lên hoặc chìm xuống)
     Trong trường hợp nó bị chìm xuống, ta thêm z-index = 1 giá trị nào đó (tùy theo bài) để nó nổi lên */
     

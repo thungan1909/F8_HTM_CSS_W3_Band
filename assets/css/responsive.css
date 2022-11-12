@@ -11,13 +11,32 @@
 /* Mobile */
 @media (max-width : 739px)
 {
+    #header {
+        overflow: hidden;
+    }
     #nav {
         display: block;
+    }
+    #nav li a {
+        padding: 1px 24px;
     }
     #nav>li {
         display: block;
     }
 
+    #nav .subnav {
+        /* initial: giá trị mặc định, bỏ đi absolute đã cài bên PC => để hiện các subnav*/
+        position: initial; 
+        background-color: #333;
+
+    }
+    #nav .subnav a {
+       
+        color: #fff;
+        padding: 5 41px;
+        line-height: 38px;
+
+    }
     #nav>li:first-child {
         display: inline-block;
     }

@@ -273,8 +273,25 @@
         for (var i= 0; i < menuItems.length; i++)
             {
                 var menuItem = menuItems[i];
+
                 menuItem.onclick = function () {
-                    header.style.height = null;
+                     // Kiểm tra xem menuItem đó có có anh chị em liền kề (phần tử con không) 
+                     // và phần tử liền kề đó có phải là subnav hay không
+                    var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav');
+                    // Nếu là menu cha (menu - More)
+                    if (isParentMenu)
+                    {
+                        // Bỏ những hành vi mặc định
+                        event.preventDefault();
+                        
+                    }
+                    // Nếu không phải là menu cha (Menu - More), là những menu item khác
+                    else {
+                        //ẩn item menu đó đi
+                      
+                        header.style.height = null;
+                    }
+                    
                 }
             }
     </Script>
