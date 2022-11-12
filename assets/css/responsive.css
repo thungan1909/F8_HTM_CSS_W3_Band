@@ -1,20 +1,26 @@
 /* PC */
-@media (min-width : 1024px)
+/* @media (min-width : 1024px) */
+@media (min-width : 64px)
 {
 
 }
 /* Tablet & mobile */
-@media (max-width : 1023x)
+/* @media (max-width : 1023px) */
+@media (max-width : 63.9375em)
 {
     .btn {
         padding: 15px 16px;
     }
     #content .contact-input {
         padding: 15px;
+        font-size: 17px;
     }
     #content .contact-info {
       
         line-height: 2;
+    }
+    #content .form-submit-btn {
+        font-size: 16px;
     }
 
     #footer .socials-list {
@@ -33,12 +39,15 @@
     }
 }
 /* Tablet */
-@media (min-width: 740px) and (max-width : 1023x)
+/* @media (min-width: 740px) and (max-width : 1023px) */
+@media (min-width: 46.25em) and (max-width : 63.9375em)
 {
     
 }
+
 /* Mobile */
-@media (max-width : 739px)
+/* @media (max-width : 739px) */
+@media (max-width : 46.1875em)
 {
     .s-width-full,
     .s-col-full {
