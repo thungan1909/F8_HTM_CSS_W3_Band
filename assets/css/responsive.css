@@ -3,10 +3,39 @@
 {
 
 }
+/* Tablet & mobile */
+@media (max-width : 1023x)
+{
+    .btn {
+        padding: 15px 16px;
+    }
+    #content .contact-input {
+        padding: 15px;
+    }
+    #content .contact-info {
+      
+        line-height: 2;
+    }
+
+    #footer .socials-list {
+        font-size: 48px;
+        
+    }
+
+    #footer .socials-list a{
+    
+        margin: 0 8px;
+    }
+    #footer .copy-right a{
+       
+       padding: 12px 0px;
+       display: inline-block;
+    }
+}
 /* Tablet */
 @media (min-width: 740px) and (max-width : 1023x)
 {
-
+    
 }
 /* Mobile */
 @media (max-width : 739px)
@@ -69,6 +98,6 @@
     }
 
     #content .contact-form {
-        margin-top: 15px;
+        margin-top: 32px;
     }
 }
