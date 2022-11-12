@@ -406,7 +406,7 @@ thì thẻ a (More) sẽ mất active (hiện nền hover) mà chỉ active các
     display: inline-block;
 }
 #content .contact-input {
-    padding: 15px;
+    padding: 10px;
     border: 1px solid #ccc;
     width: 100%;
     outline: none;
@@ -435,11 +435,15 @@ thì thẻ a (More) sẽ mất active (hiện nền hover) mà chỉ active các
 #footer .socials-list a{
     
     text-decoration: none; 
-    margin: 0 8px;
     color: rgba(0,0,0,0.6);
 }
-#footer .copy-right{
-    margin-top: 15px;
+/* #footer .copy-right{
+    /* margin-top: 15px; */
+    
+ */
+
+#footer .copy-right a{
+    /* margin-top: 15px;     */
     color: rgba(0,0,0,0.6);
 }
 #footer .copy-right a:hover,
