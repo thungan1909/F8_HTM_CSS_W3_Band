@@ -39,6 +39,10 @@ html {
     margin-top: 16px !important;
 }
 
+.mt-32 {
+    margin-top: 32px !important;
+}
+
 .text_center {
     text-align: center !important
 }
@@ -79,6 +83,7 @@ html {
     border: none;
     text-decoration: none;
     display: inline-block;
+    text-align: center;
 }
 .pull-right {
     float: right;
@@ -291,9 +296,7 @@ thì thẻ a (More) sẽ mất active (hiện nền hover) mà chỉ active các
 #content .section-sub-heading  {
     text-align: center;
 }
-#content .members-list {
-    margin-top: 32px;
-}
+
 #content .member-img {
     width: 154px;
     margin-top: 15px;
