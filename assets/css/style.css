@@ -438,10 +438,13 @@ thì thẻ a (More) sẽ mất active (hiện nền hover) mà chỉ active các
     text-decoration: none; 
     color: rgba(0,0,0,0.6);
 }
-/* #footer .copy-right{
-    /* margin-top: 15px; */
+#footer .copy-right{
+     margin: 15px 0;
+    font-size: 15px;
+    color: rgba(0,0,0,0.6);
+}
     
- */
+
 
 #footer .copy-right a{
     /* margin-top: 15px;     */
