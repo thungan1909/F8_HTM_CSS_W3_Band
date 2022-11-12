@@ -15,6 +15,7 @@
         padding: 15px;
         font-size: 17px;
     }
+
     #content .contact-info {
       
         line-height: 2;
@@ -23,10 +24,11 @@
         font-size: 16px;
     }
 
+   
     #footer .socials-list {
-        font-size: 48px;
-        
+        font-size: 30px;
     }
+
 
     #footer .socials-list a{
     
@@ -42,7 +44,10 @@
 /* @media (min-width: 740px) and (max-width : 1023px) */
 @media (min-width: 46.25em) and (max-width : 63.9375em)
 {
-    
+    #footer .socials-list {
+        font-size: 48px;
+        
+    }
 }
 
 /* Mobile */
