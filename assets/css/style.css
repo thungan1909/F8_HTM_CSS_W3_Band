@@ -292,7 +292,7 @@ thì thẻ a (More) sẽ mất active (hiện nền hover) mà chỉ active các
     text-align: center;
 }
 #content .members-list {
-    margin-top: 48px;
+    margin-top: 32px;
 }
 #content .member-img {
     width: 154px;
@@ -341,7 +341,7 @@ thì thẻ a (More) sẽ mất active (hiện nền hover) mà chỉ active các
 }
 #content .places-list{
 
-    margin-top: 32px;
+    margin-top: 16px;
     margin-bottom: 48px;
 }
 #content .place-item{

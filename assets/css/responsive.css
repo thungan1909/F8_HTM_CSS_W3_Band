@@ -11,6 +11,9 @@
 /* Mobile */
 @media (max-width : 739px)
 {
+    .s-col-full {
+        width: 100%;
+    }
     #header {
         overflow: hidden;
     }
@@ -47,5 +50,17 @@
 
     #header .mobile-menu-btn {
         display: block;
+    }
+
+ 
+    /* Để hình member đẩy xuống dưới */
+    #content   .mobile-member-item {
+        margin-top: 30px;
+        width: 100%;
+    }
+    
+    #content .member-img {
+        width: 60%
+       
     }
 }
