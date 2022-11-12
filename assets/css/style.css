@@ -98,6 +98,7 @@ html {
     height: 46px;
     background-color: #000;
     z-index: 1; 
+    overflow: hidden;
     /* Do thêm position: fixed nên header nó tách rời lớp bình thường (có thể nổi lên hoặc chìm xuống)
     Trong trường hợp nó bị chìm xuống, ta thêm z-index = 1 giá trị nào đó (tùy theo bài) để nó nổi lên */
     
@@ -172,15 +173,18 @@ thì thẻ a (More) sẽ mất active (hiện nền hover) mà chỉ active các
 /* End: Navbar */
 
 /* Begin: Search button */
-
+#header .mobile-menu-btn,
 #header .search-btn {
    
- 
+    
     padding: 0 21px;
     display: block;
-    
 }
 
+#header .mobile-menu-btn {
+    display: none;
+}
+#header .mobile-menu-icon,
 #header .search-icon{
     color: #fff;
     font-size: 16px;
@@ -193,7 +197,15 @@ thì thẻ a (More) sẽ mất active (hiện nền hover) mà chỉ active các
     cursor: pointer;
 
 }
+#header .mobile-menu-btn:hover{
+    background-color: #ccc;
+    cursor: pointer;
+}
 
+#header .mobile-menu-btn:hover .mobile-menu-icon{
+   color: #000;
+    cursor: pointer;
+}
 /* Begin :Slider */
 
 #slider {

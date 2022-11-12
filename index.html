@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>THE BAND</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="./assets/fonts/themify-icons-font/themify-icons/themify-icons.css">
 </head>
 <body>
@@ -14,7 +15,6 @@
         <!--Begin: Navbar -->
             <!-- Gõ nhanh: ul#nav>li*5>a> và nhấn Tab -->
             <ul id="nav">
-            
                 <li><a href="#">Home</a></li>
                 <li><a href="#band">Band</a></li>
                 <li><a href="#tour">Tour</a></li>
@@ -36,6 +36,11 @@
             <div class="search-btn pull-right">
                 <i class="search-icon ti-search"></i>
             </div>
+            <div id="mobile-menu" class="mobile-menu-btn pull-right">
+                
+                <i class="mobile-menu-icon ti-menu"></i>
+            </div>
+           
             <!-- End :Search button -->
         </div>
         <div id="slider" class="">
@@ -208,6 +213,9 @@
             </footer>
         </div>
     </div>
+
+    <!-- Script -->
+    <!-- Begin: Modal Script  -->
     <script>
         const buyBtns = document.querySelectorAll('.js-buy-ticket')
         const modal = document.querySelector('.js-modal')
@@ -235,6 +243,44 @@
         })
         
     </script>
+    <!-- End: Modal Script  -->
+    <!-- Begin: Menu Script  -->
+    <Script>
+        var header = document.getElementById('header'); 
+      
+        var menu_btn = document.getElementById('mobile-menu');
+        var header_height = header.clientHeight;    
+        menu_btn.onclick = function() {
+           
+            // Kiem tra xem chieu cao header hien tai co bang chieu cao header mac dinh khong
+            var isClosed = header.clientHeight === header_height;
+            // Neu bang => tra ve isClose la true  => nav đang đóng
+            if(isClosed)
+            {           
+                // Đang đóng thì mở ra => chuyển height = auto
+                header.style.height = 'auto'; 
+            }
+            else {
+                // Ẩn đi
+                header.style.height = null;
+            }
+        }
+    
+        // Tự động đóng khi chọn một mục trong menu
+        // Lấy ra những class khác, không có dấu thăng 
+        var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
+       // console.log(menuItems);
+        for (var i= 0; i < menuItems.length; i++)
+            {
+                var menuItem = menuItems[i];
+                menuItem.onclick = function () {
+                    header.style.height = null;
+                }
+            }
+    </Script>
+   
+    
+     <!--End: Menu Script  -->
 </body>
 
 </html>
